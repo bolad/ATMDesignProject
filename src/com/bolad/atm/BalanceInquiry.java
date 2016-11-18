@@ -11,7 +11,7 @@ public class BalanceInquiry extends Transaction {
     @Override
     public void execute() {
         
-         //get references to bankDatabase and Screen
+    //get references to bankDatabase and Screen
     BankDatabase bankDatabase = getBankDatabase();
     Screen screen = getScreen();
     

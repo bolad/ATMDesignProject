@@ -7,7 +7,6 @@ public class Withdrawal extends Transaction {
     private int amount;
     private Keypad keypad; //reference to keypad
     private CashDispenser cashDispenser; //reference to cash dispenser
-    
     private final static int CANCELED = 6; //Option to cancel
     
     public Withdrawal(int userAccountNumber, Screen atmScreen, BankDatabase atmBankDatabase,
@@ -24,6 +23,8 @@ public class Withdrawal extends Transaction {
     private int displayMenuOfAmounts() {
             
             int userChoice = 0; //local variable to store return value
+            
+            //create screen object here cos screen has private access in Transaction
             Screen screen = getScreen();
             
             int[] amounts = {0, 20, 40, 60, 100, 200};

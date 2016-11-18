@@ -11,7 +11,7 @@ public class BankDatabase {
         accounts[1] = new Account(98765, 56789, 200.0, 200.0);
         
     }
-    
+    //allow BankDatabase to obtain a reference to a particular account
     private Account getAccount(int accountNumber) {
         
         for (Account currentAccount: accounts) {
