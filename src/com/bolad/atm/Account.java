@@ -9,7 +9,7 @@ public class Account {
     private double totalBalance;
     
     
-    //account constructor initializing attributes
+    //Account constructor initializing attributes
     public Account(int theAccountNumber, int thePIN, double theAvailableBalance, double theTotalBalance) {
         
         accountNumber = theAccountNumber;
@@ -24,7 +24,7 @@ public class Account {
         if (userPIN == pin) {
             return true;
         }
-        else{
+        else {
             return false;
         }
     }

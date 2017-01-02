@@ -1,6 +1,6 @@
 package com.bolad.atm;
 
-public class Deposit extends Transaction{
+public class Deposit extends Transaction {
     
     private double amount;
     private Keypad keypad;
@@ -49,14 +49,14 @@ public class Deposit extends Transaction{
             
             if(envelopeReceived){
                 screen.displayMessageLine("\nYour envelope has been " + "received.\nNote:"
-                        + "The money just deposited will not be availabe until we verify the"
+                        + " The money just deposited will not be availabe until we verify the "
                         + "amount of any enclosed cash and your checks clear.");
                 
                 //credit account to reflect deposit
                 bankDatabase.credit(getAccountNumber(), amount);
             }
             else{
-                screen.displayMessageLine("\nYou did not insert an envelope, so the ATM"
+                screen.displayMessageLine("\nYou did not insert an envelope, so the ATM "
                         + "has canceled your transaction.");
             }
         }

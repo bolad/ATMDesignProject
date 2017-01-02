@@ -24,7 +24,7 @@ public class BankDatabase {
     
     public boolean authenticateUser(int userAccountNumber, int userPIN) {
         
-        //attempt to retrieve the account with the accont number
+        //attempt to retrieve the account with the account number
         Account userAccount = getAccount(userAccountNumber);
         if (userAccount != null){
             return userAccount.validatePIN(userPIN);
